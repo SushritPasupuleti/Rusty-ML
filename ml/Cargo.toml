@@ -1,0 +1,13 @@
+[package]
+name = "ml"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.riff]
+build-inputs = ["openssl.dev", "openssl", "pkg-config"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+tch = "0.14.0"
