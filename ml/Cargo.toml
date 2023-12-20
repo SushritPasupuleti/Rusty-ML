@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [package.metadata.riff]
-build-inputs = ["openssl.dev", "openssl", "pkg-config"]
+build-inputs = ["openssl.dev", "openssl", "pkg-config", "libtorch-bin"]
+runtime-inputs = ["libtorch-bin"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

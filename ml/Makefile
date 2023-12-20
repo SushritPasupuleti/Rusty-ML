@@ -8,8 +8,12 @@ help:
 	@echo "  venv_activate       to activate the virtual environment"
 	@echo "  nix-shell           to enter the nix shell"
 
+run_w_py:
+	export LIBTORCH_BYPASS_VERSION_CHECK=1 && export LIBTORCH_USE_PYTORCH=1
+	cargo run
+
 run:
-	export  LIBTORCH_BYPASS_VERSION_CHECK=1 && export LIBTORCH_USE_PYTORCH=1
+	export LIBTORCH_BYPASS_VERSION_CHECK=1
 	cargo run
 
 requirements_freeze:
